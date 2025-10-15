@@ -1,0 +1,75 @@
+.viewpost-container {
+  width: 80%;
+  margin: 30px auto;
+  background-color: #fafafa;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.post-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.label {
+  width: 60px;
+  font-weight: 600;
+}
+
+.input-placeholder {
+  background-color: #d8d8d8;
+  border-radius: 3px;
+}
+
+.title {
+  width: 50%;
+  height: 25px;
+}
+
+.author {
+  width: 40%;
+  height: 25px;
+}
+
+.content {
+  width: 70%;
+  height: 120px;
+}
+
+.divider {
+  margin: 20px 0;
+  border: 0.5px solid #ccc;
+}
+
+.comment-section {
+  margin-top: 10px;
+}
+
+.comment {
+  margin-bottom: 12px;
+}
+
+.comment-writer {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.comment-content {
+  margin-left: 10px;
+  color: #333;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 8px;
+}
