@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './BoardList.css';
+import axios from "axios";
 
 function BoardList() {
   const [posts, setPosts] = useState([]);
@@ -7,8 +8,8 @@ function BoardList() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/boards?page=0&size=10")
-      .then((res) => setPosts(res.data.contents || []))
+      .get("http://localhost:8080/api/boards?page=1&size=10")
+      .then((res) => setPosts(res.data.boards || []))
       .catch((err) => console.error(err))
       .finally(() => setLoading(false));
   }, []);
