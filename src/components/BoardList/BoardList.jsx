@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './BoardList.css';
+import axios from "axios";
+
 
 function BoardList() {
+  const navigate = useNavigate();
+
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -21,7 +26,9 @@ function BoardList() {
     <div className="board-container">
       <header className="board-header">
         <h1 className="logo">Logo example</h1>
-        <button className="add-button">＋</button>
+        <button className="add-button" onClick={() => navigate('/createpost')}>
+          ＋
+        </button>
       </header>
       {posts.length === 0 ? (
         <p>게시물이 없습니다</p>
