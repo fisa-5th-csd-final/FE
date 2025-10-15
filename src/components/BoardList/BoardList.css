@@ -1,0 +1,76 @@
+/* 기본 전체화면 설정 */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 85%;
+}
+
+/* 전체 화면 채우기 */
+.board-container {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+}
+
+/* 헤더 영역 */
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0;
+  height: 150px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1; /*추가*/
+  margin: 0;
+}
+
+.add-button {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* 게시글 목록 영역 */
+.post-list {
+  flex: 1;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: 4px 32px 0 32px;
+}
+
+.post-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.post-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.post-content {
+  color: #555;
+  font-size: 15px;
+}
+
+.post-author {
+  color: #777;
+  font-size: 14px;
+  white-space: nowrap;
+}
